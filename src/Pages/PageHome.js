@@ -17,9 +17,17 @@ const PageHome = () => {
 
     let _date = new Date();
 
-    if (token.token == "" || null || undefined || token.date <= _date + 3600) {
+    let _dateNew = new Date(token.date[0]);
+    _dateNew.setHours(_dateNew.getHours() + 1);    
+
+    if (token.token == "" || null || undefined) {
       dispatch({ type: "ADD_TOKEN", token: _token, date: _date });
     }
+
+    if (_date > _dateNew) {
+      dispatch({ type: "ADD_TOKEN", token: _token, date: _date });
+    }
+
   }, []);
 
   const ArtistRoute = ({ match }) => (
@@ -36,7 +44,6 @@ const PageHome = () => {
     />
   );
 
-  console.log(token.token[0]);
 
   return (
     <>
