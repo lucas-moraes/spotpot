@@ -9,38 +9,48 @@ import SearchInput from "../Components/SearchInput.js";
 import { useSelector, useDispatch } from "react-redux";
 
 const PageHome = () => {
-
-  const token = useSelector(state => state.token);
+  const token = useSelector(state => state);
   const dispatch = useDispatch();
 
   useEffect(() => {
     let _token = hash.access_token;
-    if (token == "" || null || undefined ) {
-      dispatch({ type: "ADD_TOKEN", title: _token });
+
+    let _date = new Date();
+
+    if (token.token == "" || null || undefined || token.date <= _date + 3600) {
+      dispatch({ type: "ADD_TOKEN", token: _token, date: _date });
     }
   }, []);
 
   const ArtistRoute = ({ match }) => (
     <Artist
       searchString={match ? match.params.searchString || "" : ""}
-      token={token}
+      token={token.token}
     />
   );
 
   const AlbumsRoute = ({ match }) => (
     <Albums
       searchString={match ? match.params.searchString || "" : ""}
-      token={token}
+      token={token.token}
     />
   );
 
+  console.log(token.token[0]);
+
   return (
     <>
-      {token != "" || null || undefined ? (
+      {token.token != "" || null || undefined ? (
         <>
           <div className="container">
             <div className="header">
-              <img src={Logo} className="logo" width="35" height="35" alt="Spotify Icon" />
+              <img
+                src={Logo}
+                className="logo"
+                width="35"
+                height="35"
+                alt="Spotify Icon"
+              />
               <Route
                 exact
                 path="/:searchString?"
