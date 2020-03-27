@@ -1,0 +1,1132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 37px;
+}
+
+@media only screen and (max-width: 374px) {
+  body {
+    background-color: #282c34;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+  
+  #root {
+    display: block;
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+  
+  h4 {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .row {
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  
+  .row-1 {
+    margin: 10px;
+    font-size: 12px;
+    border-bottom: solid 1px #474c54;
+  }
+  
+  .row-2 {
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+  
+  .trackTitle {
+    width: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .trackStars {
+    font-size: 12px;
+    color: #ffd500;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .cardArtist {
+    margin: 7px;
+    width: 303px;
+  }
+  
+  .artistImage {
+    width: 100px;
+    border-radius: 7px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  p{
+    margin: 2px;
+  }
+  
+  .albumImage {
+    max-width: 100%;
+    border-radius: 7px;
+  }
+  
+  .cardArtist-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .cardArtist-square {
+    width: 100%;
+    margin: 7px;
+    font-size: 12px;
+  }
+  
+  .cardArtist-stars {
+    font-size: 20px;
+    color: #ffd500;
+  }
+  
+  .cardAlbuns {
+    padding: 6px;
+    width: 303px;
+  }
+  
+  .albunsImage {
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  
+  .cardAlbuns-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-body:hover {
+    box-shadow: inset 0px 0px 3px 0px #42464e;
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-title {
+    font-size: 13px;
+    margin: auto 0 auto 10px;
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-width: 1px;
+    padding: 7px;
+    font-size: 24px;
+    color: white;
+    border-color: #999999;
+    background-color: transparent;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    height: 8rem;
+    justify-content: center;
+    display: grid;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border-radius: 2em;
+    border: 0.2em solid #4cbe4d;
+    color: #4cbe4d;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 0.7em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    height: 12px;
+  }
+  
+  .btn:hover {
+    background: #4cbe4d;
+    color: #333;
+  }
+  
+  .btn--login {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    background-color: #282c34;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+  
+  #root {
+    display: block;
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+  
+  h4 {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .row {
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  
+  .row-1 {
+    margin: 10px;
+    font-size: 12px;
+    border-bottom: solid 1px #474c54;
+  }
+  
+  .row-2 {
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+  
+  .trackTitle {
+    width: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .trackStars {
+    font-size: 12px;
+    color: #ffd500;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .cardArtist {
+    margin: 7px;
+    width: 360px;
+  }
+  
+  .artistImage {
+    width: 100px;
+    border-radius: 7px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  p{
+    margin: 2px;
+  }
+  
+  .albumImage {
+    max-width: 500px;
+    border-radius: 7px;
+  }
+  
+  .cardArtist-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .cardArtist-square {
+    width: 100%;
+    margin: 7px;
+    font-size: 15px;
+  }
+  
+  .cardArtist-stars {
+    font-size: 20px;
+    color: #ffd500;
+  }
+  
+  .cardAlbuns {
+    padding: 6px;
+    width: 360px;
+  }
+  
+  .albunsImage {
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  
+  .cardAlbuns-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-body:hover {
+    box-shadow: inset 0px 0px 3px 0px #42464e;
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-title {
+    font-size: 13px;
+    margin: auto 0 auto 10px;
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-width: 1px;
+    padding: 7px;
+    font-size: 24px;
+    color: white;
+    border-color: #999999;
+    background-color: transparent;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    height: 8rem;
+    justify-content: center;
+    display: grid;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border-radius: 2em;
+    border: 0.2em solid #4cbe4d;
+    color: #4cbe4d;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 0.7em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    height: 12px;
+  }
+  
+  .btn:hover {
+    background: #4cbe4d;
+    color: #333;
+  }
+  
+  .btn--login {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  body {
+    background-color: #282c34;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+  }
+  
+  #root {
+    display: block;
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+  
+  h4 {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .row {
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  
+  .row-1 {
+    margin: 10px;
+    font-size: 12px;
+    border-bottom: solid 1px #474c54;
+  }
+  
+  .row-2 {
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+  
+  .trackTitle {
+    width: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .trackStars {
+    font-size: 12px;
+    color: #ffd500;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .cardArtist {
+    margin: 0px;
+    width: 100%;
+  }
+  
+  .artistImage {
+    width: 130px;
+    border-radius: 7px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  p{
+    margin: 2px;
+  }
+  
+  .albumImage {
+    max-width: 500px;
+    border-radius: 7px;
+  }
+  
+  .cardArtist-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .cardArtist-square {
+    width: 100%;
+    margin: 7px;
+    font-size: 15px;
+  }
+  
+  .cardArtist-stars {
+    font-size: 20px;
+    color: #ffd500;
+  }
+  
+  .cardAlbuns {
+    padding: 6px;
+    width: 390px;
+  }
+  
+  .albunsImage {
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  
+  .cardAlbuns-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-body:hover {
+    box-shadow: inset 0px 0px 3px 0px #42464e;
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-title {
+    font-size: 13px;
+    margin: auto 0 auto 10px;
+  }
+  
+  input {
+    width: 100%;
+    margin: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-width: 1px;
+    padding: 7px;
+    font-size: 24px;
+    color: white;
+    border-color: #999999;
+    background-color: transparent;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    height: 8rem;
+    justify-content: center;
+    display: grid;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border-radius: 2em;
+    border: 0.2em solid #4cbe4d;
+    color: #4cbe4d;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 0.7em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    height: 12px;
+  }
+  
+  .btn:hover {
+    background: #4cbe4d;
+    color: #333;
+  }
+  
+  .btn--login {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #282c34;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 10px;
+    width: 50%;
+  }
+  
+  h4 {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .row {
+    display: block;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  
+  .row-1 {
+    margin: 10px;
+    font-size: 12px;
+    border-bottom: solid 1px #474c54;
+  }
+  
+  .row-2 {
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+  
+  .trackTitle {
+    width: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .trackStars {
+    font-size: 12px;
+    color: #ffd500;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .cardArtist {
+    margin: 0px;
+    width: 300px;
+  }
+  
+  .artistImage {
+    width: 90px;
+    border-radius: 7px;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  p{
+    margin: 2px;
+  }
+  
+  .albumImage {
+    max-width: 500px;
+    border-radius: 7px;
+  }
+  
+  .cardArtist-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .cardArtist-square {
+    width: 100%;
+    margin: 7px;
+    font-size: 11px;
+  }
+  
+  .cardArtist-stars {
+    font-size: 20px;
+    color: #ffd500;
+  }
+  
+  .cardAlbuns {
+    padding: 6px;
+    width: 100%;
+  }
+  
+  .albunsImage {
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  
+  .cardAlbuns-body {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px 0px #22252b;
+    background-color: rgb(48, 52, 58);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-body:hover {
+    box-shadow: inset 0px 0px 3px 0px #42464e;
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+  
+  .cardAlbuns-title {
+    font-size: 13px;
+    margin: auto 0 auto 10px;
+  }
+  
+  input {
+    width: 100%;
+    margin: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-width: 1px;
+    padding: 7px;
+    font-size: 24px;
+    color: white;
+    border-color: #999999;
+    background-color: transparent;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    height: 8rem;
+    justify-content: center;
+    display: grid;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border-radius: 2em;
+    border: 0.2em solid #4cbe4d;
+    color: #4cbe4d;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 0.7em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    height: 12px;
+  }
+  
+  .btn:hover {
+    background: #4cbe4d;
+    color: #333;
+  }
+  
+  .btn--login {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  display: flex;
+}
+
+.container {
+  margin: 10px;
+  width: 50%;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.row {
+  display: block;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 12px;
+}
+
+.row-1 {
+  margin: 10px;
+  font-size: 12px;
+  border-bottom: solid 1px #474c54;
+}
+
+.row-2 {
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+
+.trackTitle {
+  width: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.trackStars {
+  font-size: 12px;
+  color: #ffd500;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.cardArtist {
+  margin: 10px;
+  width: 350px;
+}
+
+.artistImage {
+  width: 150px;
+  border-radius: 7px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.albumImage {
+  max-width: 380px;
+  border-radius: 7px;
+}
+
+.cardArtist-body {
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px 0px #22252b;
+  background-color: rgb(48, 52, 58);
+}
+
+.cardArtist-square {
+  width: 100%;
+  margin: 7px;
+  font-size: 12px;
+}
+
+.cardArtist-stars {
+  font-size: 20px;
+  color: #ffd500;
+}
+
+.cardAlbuns {
+  padding: 6px;
+  width: 100%;
+}
+
+.albunsImage {
+  width: 31px;
+  height: 31px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.cardAlbuns-body {
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px 0px #22252b;
+  background-color: rgb(48, 52, 58);
+  transition: 0.5s;
+}
+
+.cardAlbuns-body:hover {
+  box-shadow: inset 0px 0px 3px 0px #42464e;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.cardAlbuns-title {
+  font-size: 13px;
+  margin: auto 0 auto 10px;
+}
+
+input {
+  width: 500px;
+  margin: 0 15px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-bottom-width: 1px;
+  padding: 7px;
+  font-size: 24px;
+  color: white;
+  border-color: #999999;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.label {
+  height: 8rem;
+  justify-content: center;
+  display: grid;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #4cbe4d;
+  color: #4cbe4d;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  height: 12px;
+}
+
+.btn:hover {
+  background: #4cbe4d;
+  color: #333;
+}
+
+.btn--login {
+  margin: 0 auto;
+}
+}
+
+@media only screen and (min-width: 992px) {
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 10px;
+  width: 500px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 12px;
+}
+
+.row-1 {
+  margin: 10px;
+  font-size: 12px;
+  border-bottom: solid 1px #474c54;
+}
+
+.row-2 {
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+
+.trackTitle {
+  width: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.trackStars {
+  font-size: 12px;
+  color: #ffd500;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.cardArtist {
+  margin: 10px;
+  width: 490px;
+}
+
+.artistImage {
+  width: 150px;
+  border-radius: 7px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.albumImage {
+  max-width: 500px;
+  border-radius: 7px;
+}
+
+.cardArtist-body {
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px 0px #22252b;
+  background-color: rgb(48, 52, 58);
+}
+
+.cardArtist-square {
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+}
+
+p {
+  margin: 7px;
+}
+.cardArtist-stars {
+  font-size: 20px;
+  color: #ffd500;
+}
+
+.cardAlbuns {
+  margin: 6px;
+  width: 106px;
+}
+
+.albunsImage {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 7px; 
+}
+
+.cardAlbuns-body {
+  display: grid;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px 0px #22252b;
+  background-color: rgb(48, 52, 58);
+  transition: 0.5s;
+}
+
+.cardAlbuns-body:hover {
+  box-shadow: 0px 4px 7px 2px #15171b;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.cardAlbuns-title {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+input {
+  width: 500px;
+  margin: 0 15px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-bottom-width: 1px;
+  padding: 7px;
+  font-size: 24px;
+  color: white;
+  border-color: #999999;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.label {
+  height: 8rem;
+  justify-content: center;
+  display: grid;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #4cbe4d;
+  color: #4cbe4d;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  height: 12px;
+}
+
+.btn:hover {
+  background: #4cbe4d;
+  color: #333;
+}
+
+.btn--login {
+  margin: 0 auto;
+}
+
+}
