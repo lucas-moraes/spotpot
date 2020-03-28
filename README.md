@@ -1,8 +1,8 @@
-# spotpot - ReactJs
+# spotpot - ReactJS
 
 Desafio em ReactJs sobre o Spotify, consumindo sua API.
 
-<img src="https://user-images.githubusercontent.com/50468352/77828452-4467a700-70fa-11ea-9539-fb76f042479d.png" width="600" />
+<img src="https://user-images.githubusercontent.com/50468352/77828452-4467a700-70fa-11ea-9539-fb76f042479d.png" width="800" />
 
 
 ## Apresentação
